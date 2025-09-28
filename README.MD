@@ -40,8 +40,8 @@ It generates a CSV log (`case_openings.csv`) and prints colorful output in the t
 1. Open Steam Community in Firefox.
 2. Press `F12` → `Storage` → `Cookies`.
 3. Copy `sessionid` and `steamLoginSecure`.
-&nbsp;
 
+&nbsp;
 > ⚠️ If cookies are wrong, or if Steam temporarily blocks your IP, you will see:
 
 ```
