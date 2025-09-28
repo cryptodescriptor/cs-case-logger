@@ -19,7 +19,7 @@ It generates a CSV log (`case_openings.csv`) and prints colorful output in the t
 
 ```json
 {
-  "steamid": "<your steamid here>",
+  "steamid": "<your steam id>",
   "sessionid": "<your sessionid here>",
   "steamLoginSecure": "<your steamLoginSecure here>"
 }
@@ -54,7 +54,6 @@ Attempt {attempt}/{retries} failed: {e}. Retrying in {delay}s...
 In order avoid future ip blocks open case_logger.py in your favourite text editor and change ``` time.sleep(1)``` to ```time.sleep(3)```. The default is 1s because it's rare to get ip blocked with a standard history size and makes the script a lot faster.
 
 ---
-
 
 ## Usage
 
