@@ -19,7 +19,7 @@ It generates a CSV log (`case_openings.csv`) and prints colorful output in the t
 
 ```json
 {
-  "steamid": "<your steam id>",
+  "steamid": "<your steamid here>",
   "sessionid": "<your sessionid here>",
   "steamLoginSecure": "<your steamLoginSecure here>"
 }
