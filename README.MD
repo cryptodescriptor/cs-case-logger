@@ -1,4 +1,5 @@
 
+
 # CS:GO / CS2 Case History Logger
 
 This script tracks your case openings in CS:GO and CS2 and prints stats about skins, rarities, and special drops (Classified, Covert, Contraband, Extraordinary gloves).  
@@ -45,8 +46,10 @@ It generates a CSV log (`case_openings.csv`) and prints colorful output in the t
 ```
 Attempt {attempt}/{retries} failed: {e}. Retrying in {delay}s...
 ```
-
 ---
+### ⚠️ If your case history is sizeable you may run into temporary IP blocks
+In order avoid future ip blocks open case_logger.py in your favourite text editor and change ``` time.sleep(1)``` to ```time.sleep(3)```. The default is 1s because it's rare to get ip blocked with a standard history size and makes the script a lot faster.
+
 
 ## Usage
 
