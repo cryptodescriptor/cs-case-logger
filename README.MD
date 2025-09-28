@@ -6,7 +6,7 @@ This script tracks your case openings in CS:GO and CS2 and prints stats about sk
 It generates a CSV log (`case_openings.csv`) and prints colorful output in the terminal.
 
 <!-- SCREENSHOT PLACEHOLDER -->
-![Example Output](screenshot_placeholder.png)
+![Example Output](https://raw.githubusercontent.com/cryptodescriptor/cs-case-logger/refs/heads/master/images/ss.png)
 
 ---
 
