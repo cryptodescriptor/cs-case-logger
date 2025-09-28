@@ -41,14 +41,14 @@ It generates a CSV log (`case_openings.csv`) and prints colorful output in the t
 2. Press `F12` → `Storage` → `Cookies`.
 3. Copy `sessionid` and `steamLoginSecure`.
 
-&nbsp;
+
 > ⚠️ If cookies are wrong, or if Steam temporarily blocks your IP, you will see:
 
 ```
 Attempt {attempt}/{retries} failed: {e}. Retrying in {delay}s...
 ```
 
-&nbsp;
+
 > ⚠️ If your case history is sizeable you may run into temporary IP blocks
 
 To avoid future IP blocks, open `case_logger.py` in your favorite text editor and change `time.sleep(1)` to `time.sleep(3)
