@@ -47,9 +47,8 @@ It generates a CSV log (`case_openings.csv`) and prints colorful output in the t
 Attempt {attempt}/{retries} failed: {e}. Retrying in {delay}s...
 ```
 
----
 
-#### ⚠️ If your case history is sizeable you may run into temporary IP blocks
+### ⚠️ If your case history is sizeable you may run into temporary IP blocks
 
 To avoid future IP blocks, open `case_logger.py` in your favorite text editor and change `time.sleep(1)` to `time.sleep(3)
 
