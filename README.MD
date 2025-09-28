@@ -15,7 +15,7 @@ It generates a CSV log (`case_openings.csv`) and prints colorful output in the t
 
 - **Windows Users:** Use **Command Prompt**, not PowerShell. PowerShell does not handle ANSI colors correctly.  
 - **Steam Cookies:** You need your `sessionid` and `steamLoginSecure` cookies.  
-- **Steam ID:** Put your steamid in `steam_config.json` file (the one in your profile url):
+- **Steam ID:** Put your SteamID `steam_config.json` file (the one in your profile url):
 
 ```json
 {
@@ -50,7 +50,10 @@ Attempt {attempt}/{retries} failed: {e}. Retrying in {delay}s...
 ---
 
 ### ⚠️ If your case history is sizeable you may run into temporary IP blocks
+
 In order avoid future ip blocks open case_logger.py in your favourite text editor and change ``` time.sleep(1)``` to ```time.sleep(3)```. The default is 1s because it's rare to get ip blocked with a standard history size and makes the script a lot faster.
+
+---
 
 
 ## Usage
@@ -61,7 +64,7 @@ In order avoid future ip blocks open case_logger.py in your favourite text edito
 pip install requests beautifulsoup4
 ```
 
-2. Update `steam_config.json` with your cookies and steamid.
+2. Update `steam_config.json` with your cookies and SteamID.
 3. Run the script:
 
 ```bash
