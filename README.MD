@@ -47,6 +47,8 @@ It generates a CSV log (`case_openings.csv`) and prints colorful output in the t
 Attempt {attempt}/{retries} failed: {e}. Retrying in {delay}s...
 ```
 
+---
+
 
 ## ⚠️ If your case history is sizeable you may run into temporary IP blocks
 
