@@ -268,7 +268,7 @@ def paginate_inventory(url, cookies):
                 f"&cursor[time_frac]={cursor['time_frac']}"
                 f"&cursor[s]={cursor['s']}"
             )
-            time.sleep(3)
+            time.sleep(1)
 
     return total, stattrak_count, last_knife_dt, last_gloves_dt, all_cases, skin_counter, rarity_counter, case_counter, special_drops
 
