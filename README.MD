@@ -51,7 +51,7 @@ Attempt {attempt}/{retries} failed: {e}. Retrying in {delay}s...
 
 ### ⚠️ If your case history is sizeable you may run into temporary IP blocks
 
-In order avoid future ip blocks open case_logger.py in your favourite text editor and change ``` time.sleep(1)``` to ```time.sleep(3)```. The default is 1s because it's rare to get ip blocked with a standard history size and makes the script a lot faster.
+To avoid future IP blocks, open `case_logger.py` in your favorite text editor and change `time.sleep(1)` to `time.sleep(3)
 
 ---
 
