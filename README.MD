@@ -27,6 +27,34 @@ It generates a CSV log (`case_openings.csv`) and prints colorful output in the t
 
 ---
 
+## How to Get Steam Cookies
+
+### Chrome
+
+1. Open Steam Community in Chrome.
+2. Press `F12` → `Application` → `Cookies`.
+3. Copy `sessionid` and `steamLoginSecure`.
+
+### Firefox
+
+1. Open Steam Community in Firefox.
+2. Press `F12` → `Storage` → `Cookies`.
+3. Copy `sessionid` and `steamLoginSecure`.
+
+> ⚠️ If cookies are wrong, or if Steam temporarily blocks your IP, you will see:
+
+```
+Attempt {attempt}/{retries} failed: {e}. Retrying in {delay}s...
+```
+
+---
+
+### ⚠️ If your case history is sizeable you may run into temporary IP blocks
+
+To avoid future IP blocks, open `case_logger.py` in your favorite text editor and change `time.sleep(1)` to `time.sleep(3)
+
+---
+
 ## Usage
 
 1. Install dependencies:
@@ -54,34 +82,5 @@ python case_logger.py
 - Tracks last knife and glove openings.
 - **Special drops:** Classified, Covert, Contraband, Extraordinary gloves.
 - Generates `case_openings.csv`.
-
----
-
-## How to Get Steam Cookies
-
-### Chrome
-
-1. Open Steam Community in Chrome.
-2. Press `F12` → `Application` → `Cookies`.
-3. Copy `sessionid` and `steamLoginSecure`.
-
-### Firefox
-
-1. Open Steam Community in Firefox.
-2. Press `F12` → `Storage` → `Cookies`.
-3. Copy `sessionid` and `steamLoginSecure`.
-
-> ⚠️ If cookies are wrong, or if Steam temporarily blocks your IP, you will see:
-
-```
-Attempt {attempt}/{retries} failed: {e}. Retrying in {delay}s...
-```
-
----
-
-### ⚠️ If your case history is sizeable you may run into temporary IP blocks
-
-To avoid future IP blocks, open `case_logger.py` in your favorite text editor and change `time.sleep(1)` to `time.sleep(3)
-
 
 ---
