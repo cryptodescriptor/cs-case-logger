@@ -27,6 +27,36 @@ It generates a CSV log (`case_openings.csv`) and prints colorful output in the t
 
 ---
 
+## Usage
+
+1. Install dependencies:
+
+```bash
+pip install requests beautifulsoup4
+```
+
+2. Update `steam_config.json` with your cookies and SteamID.
+3. Run the script:
+
+```bash
+python case_logger.py
+```
+
+---
+
+## Features
+
+- Tracks all case openings.
+- Counts StatTrak™ items.
+- Shows cumulative rarity stats.
+- Shows cumulative case opening stats.
+- Top 3 opened skins.
+- Tracks last knife and glove openings.
+- **Special drops:** Classified, Covert, Contraband, Extraordinary gloves.
+- Generates `case_openings.csv`.
+
+---
+
 ## How to Get Steam Cookies
 
 ### Chrome
@@ -53,32 +83,5 @@ Attempt {attempt}/{retries} failed: {e}. Retrying in {delay}s...
 
 To avoid future IP blocks, open `case_logger.py` in your favorite text editor and change `time.sleep(1)` to `time.sleep(3)
 
----
-
-## Usage
-
-1. Install dependencies:
-
-```bash
-pip install requests beautifulsoup4
-```
-
-2. Update `steam_config.json` with your cookies and SteamID.
-3. Run the script:
-
-```bash
-python case_logger.py
-```
-
-## Features
-
-- Tracks all case openings.
-- Counts StatTrak™ items.
-- Shows cumulative rarity stats.
-- Shows cumulative case opening stats.
-- Top 3 opened skins.
-- Tracks last knife and glove openings.
-- **Special drops:** Classified, Covert, Contraband, Extraordinary gloves.
-- Generates `case_openings.csv`.
 
 ---
