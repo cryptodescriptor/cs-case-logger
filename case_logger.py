@@ -53,7 +53,7 @@ def highlight_case_name(case_name):
 
 def print_item_history(item_name, last_dt, all_cases):
     if last_dt:
-        cases_since = sum(1 for _, dt_obj, *_ in all_cases if dt_obj and dt_obj < last_dt)
+        cases_since = sum(1 for _, dt_obj, *_ in all_cases if dt_obj and dt_obj > last_dt)
         msg = f"{YELLOW}Cases opened since last {item_name} ({last_dt.strftime('%Y-%m-%d %H:%M:%S')}): {cases_since}{RESET}"
         print(f"\n{msg}")
     else:
@@ -161,7 +161,7 @@ def parse_cases(html):
 
     for entry in soup.find_all("div", class_="tradehistoryrow"):
         text = entry.get_text(" ", strip=True)
-        if "Unlocked a container" not in text:
+        if "Unlocked a container" not in text or "Genesis Terminal" in text:
             continue
 
         readable_time, dt_obj = parse_timestamp(entry)
