@@ -150,6 +150,10 @@ def extract_item_and_case(entry):
             h = history_items[-1]
             case_name = h.get_text(strip=True)
 
+            # Sometimes case_name is the first item in the lsit
+            if 'Key' in case_name:
+                case_name = case_name.replace(' Key', '')
+
     if not case_name:
         case_name = "Unknown Case"
 
@@ -268,7 +272,7 @@ def paginate_inventory(url, cookies):
                 f"&cursor[time_frac]={cursor['time_frac']}"
                 f"&cursor[s]={cursor['s']}"
             )
-            time.sleep(1)
+            time.sleep(3)
 
     return total, stattrak_count, last_knife_dt, last_gloves_dt, all_cases, skin_counter, rarity_counter, case_counter, special_drops
 
